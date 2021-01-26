@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>COVID U.S</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css" integrity="sha384-F1AY0h4TrtJ8OCUQYOzhcFzUTxSOxuaaJ4BeagvyQL8N9mE4hrXjdDsNx249NpEc" crossorigin="anonymous">
+  <!--Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+  <!--CSS Link -->
+  <link rel="stylesheet" href="static/css/homepage.css">
+</head>
+
+<body>
+  <header class="page-header" role="banner">
+    <h1 class="project-name">The impact of COVID-19 in the United States</h1>
+    <h2 class="project-tagline">
+      A review of COVID-19 statistics and projecting future trends</h2>
+    
+    <a href="index.html" class="btn">Home</a>
+    <a href="usTrends.html" class="btn">Trends</a>
+    <a href="tab.html" class="btn">US COVID Data</a> 
+    <a href="model.html" class="btn">Model</a>
+    <a href="projection.html" class="btn">Projection</a> 
+    <a href="https://github.com/LisaHarrison08/COVID-Predictions" class="btn" target="_blank">Github</a> 
+    <a href="https://covid-trends-us.herokuapp.com/index.html" class="btn" target="_blank">COVID Trends</a> 
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    
+    <p>In response to tackling the Coronavirus pandemic, countries across the world have implemented a number of different policies, including; 'stay-at-home orders', work place closures, school closures, as well as restrictions on social gatherings, public transportation, and cancellations of large events. Such measures were taken in order to slow the spread of the virus through limiting public movement and interactions.</p><p>Observations taken from our COVID Trends project, there was a significat drop on mobilty across the US as the number of COVID cases increased from March. Additionally, as the number of confirmed cases began to decline and stay at home orders were lifted, mobility gradually recovered. You can explore in more detail from our project <strong>COVID Trends</strong> <a href="https://project3-dashboard.herokuapp.com/index.html">The impact of COVID-19 on US mobility, small business revenue and number of COVID cases per state.</p>
+
+    <div class="row" style="padding-bottom: 20px;">
+      <div class="col-6">
+        <a href="pos9_cases.html">
+          <embed type="text/html" src="pos9_cases.html" width="90%" height="700">
+        </a>
+      </div>
+
+        <div class="col-6">
+          <a href="death_cases.html">
+            <embed type="text/html" src="death_cases.html" width="90%" height="700">
+          </a>
+        </div>
+
+      <p>There have been observable highs and lows in the number of positive cases and deaths across the US. The state of New York was one of the hardest hit U.S. states by the COVID-19 pandemic. The surge in cases placed an immense strain on hospitals, medical staff and access to medical supplies and equipment.  As a team, we decided   
+      that an important real world application would be predicting the number of ventilators needed as Coronavirus cases rise. This data-driven approach would provide important information for hospital administrators as they plan for the future.</p>
+      
+
+    <footer class="site-footer">
+      <span class="site-footer-owner"><a href="#top">Back to Top</a></span>
+      <br>
+      <span class="site-footer-owner">
+        <i>View and download our project projections
+          <a href="https://github.com/LisaHarrison08/COVID-Predictions" target="_blank">on GitHub</a>
+          <!-- <a href="/contact" target="_blank">Contact Us</a> -->
+        </i>
+      </span>
+    </footer>
+  </main>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- ***** New code, load D3 for the map -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <!-- ***** -->
+  <script src="./static/js/app.js"></script>
+</body>
+
+</html>

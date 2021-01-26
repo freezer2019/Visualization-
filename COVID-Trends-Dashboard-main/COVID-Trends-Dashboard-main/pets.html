@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>COVID U.S</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css"
+    integrity="sha384-F1AY0h4TrtJ8OCUQYOzhcFzUTxSOxuaaJ4BeagvyQL8N9mE4hrXjdDsNx249NpEc" crossorigin="anonymous">
+  <!--Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+  <!--CSS Link -->
+  <link rel="stylesheet" href="static/css/homepage.css">
+</head>
+
+<body>
+  <main>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">The impact of COVID-19 in the United States</h1>
+
+      <a href="index.html" class="btn">Home</a>
+      <a href="comparison.html" class="btn">Compare Data</a>
+      <a href="google.html" class="btn">Google Mobility</a>
+      <a href="tweets.html" class="btn">COVID Tweets</a>
+      <a href="pets.html" class="btn">Pet Adoption</a>
+      <a href="https://github.com/LisaHarrison08/COVID-Trends" class="btn" target="_blank">Github</a>
+      <a href="https://covid-us.herokuapp.com/index.html" class="btn" target="_blank">COVID Projection</a>
+    </header>
+
+    <!-- Content -->
+    <div class="text-center">
+      <h2>Pet Adoption</h2>
+    </div>
+
+    <!-- Paragraph Text -->
+    <div class="col-lg-12">
+      <div class="card mt-5">
+        <div class="card-body">
+          <p>As humans learn how to adapt to the new restrictions and changing lifestyles brought about by COVID-19 ,
+            pets
+            in the United States continue to be born, surrendered to shelters, and adopted into loving homes. These
+            graphs
+            represent data from 1200 animal welfare organizations around the country and compare weekly data from 2019
+            and
+            2020.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--First Row Charts -->
+
+    <div class="row">
+      <!--First Row-->
+      <div class="col-lg-8">
+        <div class="box mt-3">
+          <div id="stacked-plot"></div>
+        </div>
+      </div>
+
+      <!-- Pie chart 1 -->
+      <div class="col-lg-4">
+        <div class="box mt-3">
+          <div id="piechart2-plot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row Charts -->
+    <div class="row">
+
+      <!--Second Bar Chart 2019-->
+      <div class="col-lg-8">
+        <div class="box">
+          <div id="petadoptintake-plot"></div>
+        </div>
+      </div>
+
+      <!--Second Pie Chart 2019-->
+      <div class="col-lg-4">
+        <div class="box">
+          <div id="piechart1-plot"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span class="site-footer-owner"><a href="#top">Back to Top</a></span>
+      <br>
+      <span class="site-footer-owner">
+        <i>View and download our project projections
+          <a href="https://github.com/LisaHarrison08/COVID-Trends" target="_blank">on GitHub</a>
+          <!-- <a href="/contact" target="_blank">Contact Us</a> -->
+        </i>
+      </span>
+    </footer>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="static/js/pets.js"></script>
+</body>
+
+</html>

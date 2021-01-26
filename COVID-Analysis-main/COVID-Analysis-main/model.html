@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>COVID U.S</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css"
+    integrity="sha384-F1AY0h4TrtJ8OCUQYOzhcFzUTxSOxuaaJ4BeagvyQL8N9mE4hrXjdDsNx249NpEc" crossorigin="anonymous">
+  <!--Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+  <!--CSS Link -->
+  <link rel="stylesheet" href="static/css/homepage.css">
+</head>
+
+<body>
+  <header class="page-header" role="banner">
+    <h1 class="project-name">The impact of COVID-19 in the United States</h1>
+    <h2 class="project-tagline">
+      A review of COVID-19 statistics and projecting future trends</h2>
+
+    <a href="index.html" class="btn">Home</a>
+    <a href="usTrends.html" class="btn">Trends</a>
+    <a href="tab.html" class="btn">US COVID Data</a>
+    <a href="model.html" class="btn">Model</a>
+    <a href="projection.html" class="btn">Projection</a>
+    <a href="https://github.com/LisaHarrison08/COVID-Predictions" class="btn" target="_blank">Github</a>
+    <a href="https://covid-trends-us.herokuapp.com/index.html" class="btn" target="_blank">COVID Trends</a>
+  </header>
+
+  <main id="content" class="main-content" role="main">
+
+    <p>Understanding the spread of COVID-19 is a critical task to mitigate the virus. The global spread of the virus has overwhelmed health systems, and caused widespread social and economic disruption. What we know so far is there are multiple social and environmental factors influencing the spread.  Our focus was to predict the number of ventilators needed as Coronavirus cases rise.  Data was sourced from the <a href="https://covidtracking.com"><strong>COVID Tracking Project</strong></a> and <a href="https://www.cdc.gov"><strong>CDC</strong></a> for training and testing the models. All our data comes from state and territory public health authorities or official statements from state officials and included daily positive cases, hospitalizations, deaths, and number of patients on ventilators. After cleaning the data, we tested and evaluated different machine learning models, including linear regression, random forest, and neural networks.</p>
+
+    
+      <h5> Actual vs Predicted on Ventilator - Linear Regression Model</h5>
+      <!--First Row Charts -->
+      <div class="row">
+
+          <!--First Row Charts -->
+        <div class="col-6">
+          <a href="NYsplot.html">
+            <embed type="text/html" src="plotly/NYsplot.html" width="80%" height="500">
+          </a>
+        </div>
+
+          <div class="col-6">
+            <a href="USplot.html">
+              <embed type="text/html" src="plotly/USplot.html" width="80%" height="500">
+            </a>
+          </div>
+
+      </div> 
+
+      <!--Second Row -->
+      <div class="row">
+
+        <!--First Column in this Row-->
+        <div class="col-6">
+          <p>The New York state data was sourced from the COVID Tracking Project.  The data was filtered to include a small subset for testing and analysis. The dates range from September until December. A linear regression model was applied to train and test a small number of variables: positive cases, currently hospitalised, number of patients currently in ICU and patients currently on ventilator. </p>
+        </div>
+
+        <!--Second Column in this Row-->
+        <div class="col-6" id="us">
+          <p>The US national data was sourced the COVID Tracking Project. A linear regression model was applied to train and test a number of variables: positive cases, the increase in positive cases, currently hospitalised, number of patients currently in ICU, recovered patients and patients currently on ventilator.</p><br>
+        </div>
+          <!--Third Row -->
+      <!-- <div class="row"> -->
+       
+        <!--First Column in this Row-->
+        <div class="col-12" id ='plotrf'>
+          <h5> Actual vs Predicted on Ventilator - Random Forest Model</h5>
+              <embed type="text/html" src="plotly/RandomF.html" width="100%" height="500">
+          </div>
+
+        <footer class="site-footer">
+          <span class="site-footer-owner"><a href="#top">Back to Top</a></span>
+          <br>
+          <span class="site-footer-owner">
+            <i>View and download our project projections
+              <a href="https://github.com/LisaHarrison08/COVID-Predictions" target="_blank">on GitHub</a>
+              <!-- <a href="/contact" target="_blank">Contact Us</a> -->
+            </i>
+          </span>
+        </footer>
+  </main>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<!-- ***** New code, load D3 for the map -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<!-- ***** -->
+<script src="./static/js/app.js"></script>
+</body>
+
+</html>

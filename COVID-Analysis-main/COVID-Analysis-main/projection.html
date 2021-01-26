@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>COVID U.S</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css" integrity="sha384-F1AY0h4TrtJ8OCUQYOzhcFzUTxSOxuaaJ4BeagvyQL8N9mE4hrXjdDsNx249NpEc" crossorigin="anonymous">
+  <!--Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+  <!--CSS Link -->
+  <link rel="stylesheet" href="static/css/homepage.css">
+</head>
+
+<body>
+  <header class="page-header" role="banner">
+    <h1 class="project-name">The impact of COVID-19 in the United States</h1>
+    <h2 class="project-tagline">
+      A review of COVID-19 statistics and projecting future trends</h2>
+    
+    <a href="index.html" class="btn">Home</a>
+    <a href="usTrends.html" class="btn">Trends</a>
+    <a href="tab.html" class="btn">US COVID Data</a>
+    <a href="model.html" class="btn">Model</a>
+    <a href="projection.html" class="btn">Projection</a>
+    <a href="https://github.com/LisaHarrison08/COVID-Predictions" class="btn" target="_blank">Github</a>
+    <a href="https://covid-trends-us.herokuapp.com/index.html" class="btn" target="_blank">COVID Trends</a> 
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    
+    <p>Data sourced from the COVID Tracking Project and the CDC was applied to the neural network model. There are many advantages of using a neural network model; its ability to handle large amounts of data and that it can learn and model non-linear and complex relationships within the data and generalize and predict unseen data.</p>
+
+  <div class="plot-container" style="padding-bottom: 20px;">
+    <div class="col-12">
+        <embed type="text/html" src="plotly/plotSM.html" width="80%" height="700">
+    </div>
+
+    <footer class="site-footer">
+      <span class="site-footer-owner"><a href="#top">Back to Top</a></span>
+      <br>
+      <span class="site-footer-owner">
+        <i>View and download our project projections
+          <a href="https://github.com/LisaHarrison08/COVID-Predictions" target="_blank">on GitHub</a>
+          <!-- <a href="/contact" target="_blank">Contact Us</a> -->
+        </i>
+      </span>
+    </footer>
+  </main>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- ***** New code, load D3 for the map -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <!-- ***** -->
+  <script src="./static/js/app.js"></script>
+</body>
+
+</html>

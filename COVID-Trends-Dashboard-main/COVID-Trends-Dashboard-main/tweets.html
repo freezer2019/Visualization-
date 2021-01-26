@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>COVID U.S</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css"
+    integrity="sha384-F1AY0h4TrtJ8OCUQYOzhcFzUTxSOxuaaJ4BeagvyQL8N9mE4hrXjdDsNx249NpEc" crossorigin="anonymous">
+  <!--Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;669&display=swap" rel="stylesheet">
+  <!--CSS Link -->
+  <link rel="stylesheet" href="static/css/homepage.css">
+</head>
+
+<body>
+  <main>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">The impact of COVID-19 in the United States</h1>
+
+      <a href="index.html" class="btn">Home</a>
+      <a href="comparison.html" class="btn">Compare Data</a>
+      <a href="google.html" class="btn">Google Mobility</a>
+      <a href="tweets.html" class="btn">COVID Tweets</a>
+      <a href="pets.html" class="btn">Pet Adoption</a>
+      <a href="https://github.com/LisaHarrison08/COVID-Trends" class="btn" target="_blank">Github</a>
+      <a href="https://covid-us.herokuapp.com/index.html" class="btn" target="_blank">COVID Projection</a>
+    </header>
+  
+      <div class="text-center">
+        <h2>Trump Tweets</h2>
+      </div>
+    <!-- Paragraph Text -->
+    <div class="col-lg-12">
+      <div class="card ml-4 mr-4 mt-3">
+        <div class="card-body">
+          <p>What was the President of the United States response to the pandemic? <br>Trump + Twitter, what a
+            combination!  He is likely the only President in the world that uses Twitter without a team of people
+            managing the account for him. Select the date and see the tweet!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Box Date Filter -->
+
+    <div class="row margin-top-50">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 mt-4">
+        <!-- <aside class="filters"> -->
+        <div class="panel-heading">Filter Search</div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <ul class="list-group" id="filters">
+                <li class="filter list-group-item">
+                  <label for="date">Enter a Date</label>
+                  <input class="form-control" id="filterDt" type="text" placeholder="2020-02-15">
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-primary" type="button" onClick="filterDate()">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- </aside> -->
+
+      <!-- Table -->
+
+      <div class="col-md-12 ml-5">
+        <div id="table-area" class="">
+          <table id="tweet-table" class="table-striped">
+            <thead>
+              <tr>
+                <th class="table-head">Date</th>
+                <th class="table-head">Text</th>
+              </tr>
+            </thead>
+            <span id="tbodyId">
+              <tbody></tbody>
+            </span>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- <footer class="site-footer">
+      <span class="site-footer-owner"><a href="#top">Back to Top</a></span>
+      <br>
+      <span class="site-footer-owner">
+        <i>View and download our project projections
+          <a href="https://github.com/LisaHarrison08/COVID-Trends" target="_blank">on GitHub</a>
+          <!-- <a href="/contact" target="_blank">Contact Us</a> -->
+      </i>
+      </span>
+      </footer> -->
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/tweetapp.js"></script>
+</body>
+
+</html>
