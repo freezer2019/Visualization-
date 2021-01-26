@@ -1,10 +1,9 @@
 # COVID Predictions Dashboard 
 
-## COVID Predictions Dashboard - Published here: https://covid-us.herokuapp.com/index.html
+## COVID Predictions Dashboard
 
-Created and designed a dashboard using visualizations from the repository: COVID Predictions: https://github.com/LisaHarrison08/COVID-Predictions
 
-*This updated Dashboard contains Tableau Charts created by Lisa Harrison. Link to previous dashboard can be viewed via the repository link above.
+*This updated Dashboard contains Tableau Charts.
 
 Created individual pages and a means by which to navigate between them. The pages contain visualizations relating to the impact of COVID in the United States. Users can filter by state and review significant changes over time due to the pandemic. The home page includes an animated choropleth map that displays the rise in positive COVID cases and death across the U.S.
 
